@@ -1,6 +1,6 @@
 {
   "name": "electron-webview",
-  "productName": "Electron webview",
+  "productName": "BUBBLE PULSE",
   "version": "1.0.0",
   "description": "A simple Electron webview application",
   "main": "main.js",
@@ -11,7 +11,7 @@
     "package-linux": "npx electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
     "create-installer-mac": "npx electron-installer-dmg ./release-builds/Electron\\ webview-darwin-arm64/Electron\\ webview.app electron-webview --out=release-builds --overwrite --icon=assets/icons/mac/icon.icns"
   },
-  "repository": "https://github.com/cba85/electron-webview",
+  "repository": "https://github.com/chucheloff/electron-bubble",
   "keywords": [
     "Electron",
     "webview",
@@ -22,6 +22,10 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^37.0.0",
-    "electron-installer-dmg": "^5.0.0"
+    "electron-installer-dmg": "^5.0.0",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "isexe": "^3.1.1"
   }
 }
