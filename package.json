@@ -1,6 +1,6 @@
 {
   "name": "electron-webview",
-  "productName": "BUBBLE PULSE",
+  "productName": "PULSEMIRA",
   "version": "1.0.0",
   "description": "A simple Electron webview application",
   "main": "main.js",

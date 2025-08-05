@@ -11,7 +11,7 @@ app.whenReady().then(() => {
   //mainWindow.loadURL(`file://${__dirname}/index.html`);
 
   // Option 2: Load directly an URL if you don't need interface customization
-  mainWindow.loadURL("https://bubble.com");
+  mainWindow.loadURL("https://app.pulsemira.ru");
 
   // Option 3: Uses BrowserView to load an URL
   //const view = require("./src/view");
