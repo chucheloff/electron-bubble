@@ -27,5 +27,36 @@
   },
   "dependencies": {
     "isexe": "^3.1.1"
-  }
+  },
+"build": {
+		"appId":"com.bublle-electron.app",
+		"buildDependenciesFromSource":true,
+		"win": {
+			"signAndEditExecutable":false,
+			"verifyUpdateCodeSignature":false,
+			"target": [
+				"portable", "nsis", "msi"
+			]
+		},
+		"nsis": {
+			"oneClick": false,
+			"perMachine": false,
+			"allowToChangeInstallationDirectory": true,
+			"installerIcon": "assets/icon.ico",
+			"installerSidebar": "assets/sidebar.bmp",
+			"uninstallerSidebar": "assets/sidebar.bmp",
+			"createDesktopShortcut": true,
+			"createStartMenuShortcut": true
+		},
+		"publish": [
+			{
+				"provider": "github",
+				"owner": "dimon",
+				"repo": "accurate",
+				"vPrefixedTagName": true,
+				"private": true,
+				"releaseType": "draft"
+			}
+		]
+	}
 }
